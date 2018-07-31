@@ -7,9 +7,9 @@ def coin():
     y = "heads!"
     x_counter = 0
     y_counter = 0
-    toss =  str(random.choice([x, y]))
     
-    for value in range(1,101):
+    for value in range(1,5001):
+        toss =  str(random.choice([x, y]))
         game_str += "Attempt #"+str(value)+": Throwing a coin... It's a "+toss
         if toss == x:
             x_counter += 1
